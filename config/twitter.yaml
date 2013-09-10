@@ -1,0 +1,11 @@
+development: &base
+  key: "kVjGzLU3nJXX7vTSpLeIIg"
+  secret: "cWI0XvQaA4m5JiLQe3PpP36ATeRUEhZSBDhnM39Nqug"
+
+test:
+ <<: *base
+ key: "kVjGzLU3nJXX7vTSpLeIIg"
+
+production:
+  <<: *base
+  secret: "cWI0XvQaA4m5JiLQe3PpP36ATeRUEhZSBDhnM39Nqug"
