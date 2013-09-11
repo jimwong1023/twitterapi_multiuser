@@ -1,0 +1,18 @@
+<% if @user %>
+    <div>
+      <p>
+        <strong>Welcome:</strong> <%= @user.username %><br>
+      </p>
+      <form action="/tweet/<%= @user.id %>" method="POST">
+      	<input type="text" name="tweet" placeholder="Tweet">
+      	<input type="submit" value="Post Tweet">
+      </form>
+      <p>
+        <button><a href="/sign_out">Sign Out</a></button>
+      </p>
+    </div>
+<% else %>
+  <p>
+  	<strong>Error</strong>
+  </p>
+<% end %>

@@ -1,11 +1,5 @@
-development: &base
-  key: "kVjGzLU3nJXX7vTSpLeIIg"
-  secret: "cWI0XvQaA4m5JiLQe3PpP36ATeRUEhZSBDhnM39Nqug"
+TWITTER_KEY:
+  "kVjGzLU3nJXX7vTSpLeIIg"
 
-test:
- <<: *base
- key: "kVjGzLU3nJXX7vTSpLeIIg"
-
-production:
-  <<: *base
-  secret: "cWI0XvQaA4m5JiLQe3PpP36ATeRUEhZSBDhnM39Nqug"
+TWITTER_SECRET:
+ "cWI0XvQaA4m5JiLQe3PpP36ATeRUEhZSBDhnM39Nqug"

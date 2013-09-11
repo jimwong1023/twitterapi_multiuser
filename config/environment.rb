@@ -39,6 +39,13 @@ env_config = YAML.load_file(APP_ROOT.join('config', 'twitter.yaml'))
 
 env_config.each do |key, value|
   ENV[key] = value
+  # if ENV['TWITTER_KEY']
+  #   puts ENV['TWITTER_KEY']
+  # end
+
+  # if ENV['TWITTER_SECRET']
+  #   puts ENV['TWITTER_SECRET']
+  # end
 end
 
 Twitter.configure do |config|
